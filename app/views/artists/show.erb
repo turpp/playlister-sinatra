@@ -1,0 +1,14 @@
+<h1><%=@aritst.name%></h1>
+<p>This will have all my stuff</p>
+<h3>Genres</h3>
+<ul>
+<%@genres.each do |g|%>
+<li><a href=''><%=g.name%></a></li>
+<% end %>
+</ul>
+<br>
+<h3>Songs</h3>
+<%@songs.each do |s|%>
+<li><a href=''><%=s.name%></a></li>
+<% end %>
+</ul>
